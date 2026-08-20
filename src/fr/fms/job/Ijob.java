@@ -1,4 +1,4 @@
-package fr.fms.jobs;
+package fr.fms.job;
 
 import fr.fms.entities.Shape;
 
