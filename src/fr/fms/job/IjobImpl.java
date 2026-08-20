@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import fr.fms.entities.Shape;
 
-public class IJobImpl implements IJob {
+public class IjobImpl implements temp {
 
     private Map<Integer, Shape> shapes;
 
-    public IJobImpl() {
+    public IjobImpl() {
         shapes = new HashMap<>();
     }
 
