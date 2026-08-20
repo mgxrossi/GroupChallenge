@@ -3,6 +3,7 @@ package fr.fms.job;
 import java.awt.Graphics;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import fr.fms.entities.Circle;
 import fr.fms.entities.Point;
@@ -72,6 +73,10 @@ public class IJobImpl implements IJob {
                 side
             );
         }
+    }
+
+    public Set<Integer> getAllKeysShape(){
+        return shapes.keySet();
     }
 
     @Override
