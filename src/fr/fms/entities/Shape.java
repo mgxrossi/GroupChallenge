@@ -1,7 +1,6 @@
 package fr.fms.entities;
 
 public abstract class Shape {
-
     private Point center;
 
     public Shape(int x, int y) {
@@ -21,7 +20,7 @@ public abstract class Shape {
     }
 
     public void setCenter(Point center) {
-        this.center = center;
+        center = center;
     }
 
     @Override
