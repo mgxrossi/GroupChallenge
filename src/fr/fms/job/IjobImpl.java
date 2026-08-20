@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import fr.fms.entities.Shape;
 
-public class IjobImpl implements temp {
+public class IjobImpl implements IJob {
 
     private Map<Integer, Shape> shapes;
 

@@ -2,7 +2,7 @@ package fr.fms.job;
 
 import fr.fms.entities.Shape;
 
-public interface temp {
+public interface IJob {
     public void addShape (int id, Shape shape); 
     public void deleteShape(int id);
     public Shape getShapeById(int id);
