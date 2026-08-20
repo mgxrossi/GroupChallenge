@@ -4,7 +4,7 @@ import fr.fms.entities.Circle;
 import fr.fms.entities.Point;
 import fr.fms.entities.Shape;
 import fr.fms.entities.Square;
-import fr.fms.jobs.IJobImpl;
+import fr.fms.job.IJobImpl;
 
 import java.awt.Color;
 import java.awt.GradientPaint;
