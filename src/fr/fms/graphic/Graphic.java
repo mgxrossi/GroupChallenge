@@ -24,7 +24,7 @@ public class Graphic extends JFrame {
 	
 	@Override
 	public void paint(Graphics g) {	
-		super.paint(g);
+		super.paint(g);		
 		
 		for (int id = 1; id <= 5; id++) {
 
