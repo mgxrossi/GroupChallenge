@@ -1,8 +1,13 @@
 package fr.fms.job;
 
+import java.awt.Graphics;
 import java.util.HashMap;
 import java.util.Map;
+
+import fr.fms.entities.Circle;
+import fr.fms.entities.Point;
 import fr.fms.entities.Shape;
+import fr.fms.entities.Square;
 
 public class IJobImpl implements IJob {
 
@@ -37,8 +42,36 @@ public class IJobImpl implements IJob {
     }
 
     @Override
-    public void drawShape() {
-        // TODO Auto-generated method stub
+    public void drawShape(Graphics g, Shape shape) {
+    	if (shape instanceof Circle) {
+
+            Circle c = (Circle) shape;
+            Point p = c.getCenter();
+
+            int r = (int) c.getRadius();
+
+            g.fillOval(
+                    p.getX(),
+                    p.getY(),
+                    2 * r,
+                    2 * r
+                );
+            
+
+        } else if (shape instanceof Square) {
+
+            Square s = (Square) shape;
+            Point p = s.getCenter();
+
+            int side = (int) s.getSide();
+
+            g.drawRect(
+                p.getX(),
+                p.getY(),
+                side,
+                side
+            );
+        }
     }
 
     @Override
