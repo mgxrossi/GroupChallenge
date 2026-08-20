@@ -1,5 +1,7 @@
 package fr.fms.entities;
 
+import java.awt.Graphics;
+
 public abstract class Shape {
     private Point center;
 
@@ -14,6 +16,8 @@ public abstract class Shape {
     }
 
     public abstract double area();
+    
+    public abstract void draw(Graphics g);
 
     public Point getCenter() {
         return center;

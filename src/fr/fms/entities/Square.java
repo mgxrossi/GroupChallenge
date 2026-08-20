@@ -1,5 +1,6 @@
 package fr.fms.entities;
 
+import java.awt.Graphics;
 
 public class Square extends Shape {
     private double side;
@@ -31,6 +32,12 @@ public class Square extends Shape {
         return this.side * 4;
     }
 
+    @Override
+    public void draw(Graphics g) {
+        int s = (int) side;
+        g.drawRect(getCenter().getX(), getCenter().getY(), s, s);
+    }
+    
     @Override
     public String toString() {
         return "Square: side = " + side;

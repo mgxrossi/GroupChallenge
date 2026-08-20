@@ -31,7 +31,9 @@ public class Graphic extends JFrame {
             Shape shape = job.getShapeById(key);
             
             //Test d'appel à la méthode drawShape;
-            job.drawShape(g, shape);
+            if (shape != null) {
+                shape.draw(g);
+            }
 		}
 		
 	}

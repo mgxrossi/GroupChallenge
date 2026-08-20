@@ -1,5 +1,7 @@
 package fr.fms.entities;
 
+import java.awt.Graphics;
+
 public class Circle extends Shape {
     private double radius;
 
@@ -35,6 +37,12 @@ public class Circle extends Shape {
     }
 
 
+    @Override
+    public void draw(Graphics g) {
+        int r = (int) radius;
+        g.fillOval(getCenter().getX(), getCenter().getY(), 2 * r, 2 * r);
+    }
+    
     @Override
     public String toString() {
         return "Circle radius = " + radius + " " + " Area = " + area();
