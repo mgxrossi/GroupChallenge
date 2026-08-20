@@ -26,9 +26,9 @@ public class Graphic extends JFrame {
 	public void paint(Graphics g) {	
 		super.paint(g);		
 		
-		for (int id = 1; id <= 5; id++) {
+		for (int key: job.getAllKeysShape()) {
 
-            Shape shape = job.getShapeById(id);
+            Shape shape = job.getShapeById(key);
             
             //Test d'appel à la méthode drawShape;
             job.drawShape(g, shape);
